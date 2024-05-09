@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKKKKKKK</title>
+
+    <style>
+        body {
+            background-color: red;
+        }
+
+        .painel {
+            margin: auto;
+            background-color: pink;
+            width: 450px;
+            height: 450px;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 8px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-bottom: 80px;
+        }
+
+        .painel h2 {
+            margin-top: 30px;
+        }
+
+        #sim {
+            margin-top: 10px;
+            height: 45px;
+            width: 60px;
+            background-color: red;
+            border: 3px solid black;
+            border-radius: 10px;
+            color: white;
+            margin-left: -95px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        #sim:hover {
+            background-color: black;
+            border: 3px solid #ffffff;
+        }
+
+        #nao {
+            position: absolute;
+            margin-top: 10px;
+            height: 45px;
+            width: 60px;
+            background-color: red;
+            border: 3px solid black;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            margin-left: 30px;
+        }
+
+        .painel img {
+            height: 200px;
+            padding-top: 25px;
+        }
+
+        .background  {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .background::after {
+            content: '';
+            width: inherit;
+            height: inherit;
+            position: fixed;
+            inset: 0;
+}
+
+        .countainer {
+            margin-top: 10px;
+            position: absolute;
+            margin: auto;
+            background-color: red;
+            width: 200px;
+            height: 100px;
+            margin-left: 845px;
+            border-radius: 10px;
+            border: 2px solid white;
+        }
+
+        .countainer.remover {
+            display: none;
+        }
+
+        .exibir {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            margin-left: 50px;
+            margin-top: 30px;
+            background-color: hotpink;
+            color: white;
+            height: 45px;
+            width: 110px;
+            border-radius: 3px;
+            border: 3px solid black;
+            cursor: pointer;
+            font-size:  16px;
+            font-weight: 600;
+            text-align: center;
+            letter-spacing: 0.3;
+            transform: skew(-20deg);
+        }
+
+        .exibir.remover {
+            display: none;
+        }
+
+        .exibir:hover {
+            background-color: purple;
+            color: black;
+        }
+
+        #conteudo {
+            margin: auto;
+            width: 600px;
+            height: 600px;
+            border: 2px solid rgba(255, 255, 255, .5);
+            margin-top: 5px;
+            padding: 10px;
+            background-color: transparent;
+            display: none;
+            overflow: auto;
+            backdrop-filter: blur(15px);
+        }
+        
+        .videos {
+            margin-left: 10px;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        .videos h3 {
+            margin-top: 15px;
+            letter-spacing: 2px;
+        }
+
+        .conteudos::-webkit-scrollbar {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h3 {
+            color: yellow;
+        }
+
+        .eren {
+            width: 250px;
+            margin: 20px;
+            margin-left: 180px;
+            margin-bottom: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="background">
+        <video loop autoplay muted>
+            <source src="./src/fundooo.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <main>
+    <div class="painel">
+        <h1>Sitezin para a Frags</h1>
+
+        <img src="./src/atack gif.gif" alt="">
+
+
+        <h2>A Duda Ama Jogar com o Elvenz?</h2>
+
+        <button id="sim" onclick="audio.play();"> Sim! </button>
+        <button onmouseover="fuja()" id="nao"> Não! </button>
+    </div>
+    </main>
+
+    <div class="countainer">
+    <a href="#erenn"><button onclick="mostrar('conteudo')" class="exibir">MEMÓRIAS</button></a>
+    </div>
+
+    <div id="conteudo" class="conteudos">
+        <img class="eren" id="erenn" src="./src/gife4.gif" alt="">
+
+        <div class="videos" id="videoss">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MOTqDXYjk-0?si=mriQSEaQ6X5QAAEt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>NICK NOVO</h3>
+        </div>
+
+        <div class="videos" id="videoss">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/c_fmcRNdPLQ?si=mriQSEaQ6X5QAAEt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>DIAMANTE DOISSSSS</h3>
+        </div>
+
+        <div class="videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QYOB6Fvi2rM?si=mriQSEaQ6X5QAAEt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>NÃOOOO, POR FAVOR</h3>
+        </div>
+
+        <div class="videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vmywXYaNqDk?si=mriQSEaQ6X5QAAEt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>FAQUINHA BOAAA</h3>
+        </div>
+
+        <div class="videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3tCXC1j2thk?si=mriQSEaQ6X5QAAEt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>TOKENZINHOOO</h3>
+        </div>
+
+        <div class="videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dlePej83V0w?si=mriQSEaQ6X5QAAEt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>OHH, O BRAYAN</h3>
+        </div>
+
+        <div class="videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0S1NyInmnHc?si=mriQSEaQ6X5QAAEt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>DUDA SPRAYZINHOO</h3>
+        </div>
+
+        <div class="videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jRbMBQXYoTI?si=mriQSEaQ6X5QAAEt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>ELVENZ MAIN JETT</h3>
+        </div>
+
+        <div class="videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sxRcQRtzCwU?si=mriQSEaQ6X5QAAEt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>DA O DASH PORRAAA</h3>
+        </div>
+    </div>
+
+       
+    <script>
+
+        const audio = new Audio();
+        audio.src = "./src/audioo.mp3";
+
+        const botaoMostrarProjetos = document.querySelector('.exibir')
+        const esconderDiv = document.querySelector('#conteudo')
+        const divEsconder = document.querySelector('.countainer')
+
+        function fuja() {
+            var botaoNao = document.getElementById("nao")
+
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+        }
+
+        function mostrar(el) {
+            document.getElementById(el).style.display = 'block'
+            botaoMostrarProjetos.classList.add('remover')
+            divEsconder.classList.add('remover')
+        }
+
+        function esconderBotao() {
+            divEsconder.classList.style.display = 'none'
+        }
+       
+    </script>
+</body>
+</html>
